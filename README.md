@@ -19,6 +19,15 @@ This repository allows you to launch a docker service that serves as a proxy to 
 - Input URL in a web browser:   `http://localhost:{port}/?url=https://www.google.com&type=pdf`
 - With `wget` or command line tools:  `wget -O output.pdf "http://localhost:{port}/?url=https://www.google.com&type=pdf"`
 
+## URL params encoded
+
+If the URL contains special characters or in this case if the URL contains a URL with a website queryset, it is necessary to send the encoded URL:
+
+- for the URL: https://www.cv-library.co.uk/search-jobs?geo=Milton+Keynes&distance=50 the API call will be:
+
+  - With `wget` or command line tools:  `wget -O output.pdf "http://localhost:{port}/?url=https%3A%2F%2Fwww.cv-library.co.uk%2Fsearch-jobs%3Fgeo%3DMilton%2BKeynes%26distance%3D50"`
+
+
 
 ## API for the service:
 
