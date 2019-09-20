@@ -1,9 +1,7 @@
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/zenato/puppeteer-renderer)
+# Puppeteer scrapping API with Docker
 
-# Puppeteer 
-
-##  Start server using docker (If you can not run Chromium and installed docker)
-`docker run -d --name renderer -p 8080:3000 zenato/puppeteer-renderer`
+##  Start server using docker
+`docker run -d --name renderer -p 8080:3000 manuparra/puppeteer-renderer`
 
 ## Test 
 - Input url  `http://localhost:{port}/?url=https://www.google.com`
